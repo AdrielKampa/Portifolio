@@ -12,30 +12,25 @@ Just open `index.html` in a browser, or serve it:
 npx serve .
 ```
 
-## Deploy to GitHub Pages (your domain: AdrielKampa.github.io)
+## Deploy to GitHub Pages
 
-1. Create a **new public repository** on GitHub named exactly:
-   ```
-   AdrielKampa.github.io
-   ```
-   (This exact name makes GitHub serve it at the root domain instead of a subpath.)
+Live repo: https://github.com/AdrielKampa/Portifolio (already pushed to `main`).
 
-2. From this folder, initialize git and push:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/AdrielKampa/AdrielKampa.github.io.git
-   git push -u origin main
+1. On GitHub: go to the repo → **Settings → Pages** → under "Build and deployment", Source = **Deploy from a branch**, Branch = **main** / `/ (root)`. Save.
+
+2. Wait 1–2 minutes, then your site is live at:
+   ```
+   https://AdrielKampa.github.io/Portifolio/
    ```
 
-3. On GitHub: go to the repo → **Settings → Pages** → under "Build and deployment", Source = **Deploy from a branch**, Branch = **main** / `/ (root)`. Save.
+To push future changes:
+```bash
+git add .
+git commit -m "Update portfolio"
+git push
+```
 
-4. Wait 1–2 minutes, then your site is live at:
-   ```
-   https://AdrielKampa.github.io
-   ```
+> Want the shorter `https://AdrielKampa.github.io` URL instead? Create a second repo named exactly `AdrielKampa.github.io` and push the same code there — that exact name makes GitHub serve it at the root domain instead of `/Portifolio/`.
 
 ### Optional: custom domain
 If you buy a domain later, add a `CNAME` file at the project root containing just the domain (e.g. `adrielkampa.dev`), then point your domain's DNS to GitHub Pages (A records to GitHub's IPs or a CNAME to `AdrielKampa.github.io`). GitHub's docs: https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site
