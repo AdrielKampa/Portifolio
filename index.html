@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adriel Kampa de Gois — Cybersecurity Portfolio</title>
+<meta name="description" content="Adriel Kampa de Gois — Computer Science student in Dublin, transitioning into cybersecurity. Hands-on infrastructure &amp; security projects, currently pursuing the Cisco Ethical Hacker certification.">
+<meta name="theme-color" content="#05070a">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Adriel Kampa de Gois — Cybersecurity Portfolio">
+<meta property="og:description" content="Computer Science student in Dublin transitioning into cybersecurity. Hands-on projects, real infrastructure work, Cisco Ethical Hacker (in progress).">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="bg-grid"></div>
+<div class="bg-noise"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="dot"></span>
+      <span>akg<span style="color:var(--accent-green)">.</span>sec</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>whoami</a>
+      <a href="#skills" data-nav>skills</a>
+      <a href="#journey" data-nav>journey</a>
+      <a href="#projects" data-nav>projects</a>
+      <a href="#contact" data-nav>contact</a>
+      <a href="#contact" class="btn btn-primary nav-cta">Get in touch</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div>
+      <div class="hero-eyebrow"><span class="blink"></span> Open to Cybersecurity Opportunities · Dublin, IE</div>
+
+      <h1 class="hero-title">
+        Building my way into<br>
+        <span class="accent">Cybersecurity</span>,<br>
+        <span class="outline">one project at a time.</span>
+      </h1>
+
+      <p class="hero-sub">
+        I'm <strong>Adriel Kampa de Gois</strong> — a Computer Science student in Dublin with a background
+        in business analysis and IT support, now focused on network security, ethical hacking and
+        infrastructure defense. Currently pursuing the <strong>Cisco Ethical Hacker</strong> certification.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">2024–28</div>
+          <div class="hero-stat-label">BSc Computer Science</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label">Hands-on Projects</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">4+ yrs</div>
+          <div class="hero-stat-label">Professional Experience</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="terminal reveal">
+      <div class="terminal-bar">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">adriel@dublin:~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <!-- filled by JS typing animation -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="section-tag">01 · Whoami</div>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-text">
+          <p>
+            I spent over three years leading teams and driving sales strategy as a
+            <strong>Senior Business Analyst</strong> at a Brazilian bank, then moved to Dublin, Ireland,
+            to pursue a fresh path — this time in technology and security.
+          </p>
+          <p>
+            I'm currently a <strong>Computer Science student at CCT College Dublin</strong>, working
+            part-time in <strong>IT field support at Wipro</strong>, and building real infrastructure
+            projects on the side: Active Directory environments, Group Policy automation, and
+            secure access systems. My retail management background also gave me first-hand experience
+            in <strong>physical security monitoring and risk prevention</strong> — skills that translate
+            directly into how I think about threat detection today.
+          </p>
+          <p>
+            Right now I'm deepening my technical foundation through the
+            <strong>Cisco Ethical Hacker</strong> certification, with a focus on network security,
+            penetration testing and incident response. This portfolio grows as each new project ships.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-panel reveal">
+        <div class="about-panel-title">// Profile Snapshot</div>
+        <div class="about-row">
+          <span class="about-row-label">Status</span>
+          <span class="about-row-value"><span class="status-pill">Studying &amp; Open to Work</span></span>
+        </div>
+        <div class="about-row">
+          <span class="about-row-label">Location</span>
+          <span class="about-row-value">Dublin, Ireland</span>
+        </div>
+        <div class="about-row">
+          <span class="about-row-label">Education</span>
+          <span class="about-row-value">BSc Computer Science<br>CCT College Dublin</span>
+        </div>
+        <div class="about-row">
+          <span class="about-row-label">Current Cert</span>
+          <span class="about-row-value">Cisco Ethical Hacker<br><span style="color:var(--accent-violet); font-size:0.82em;">In Progress</span></span>
+        </div>
+        <div class="about-row">
+          <span class="about-row-label">Focus</span>
+          <span class="about-row-value">Network Security · Ethical Hacking</span>
+        </div>
+        <div class="about-row">
+          <span class="about-row-label">GitHub</span>
+          <span class="about-row-value"><a href="https://github.com/AdrielKampa" target="_blank" rel="noopener">github.com/AdrielKampa</a></span>
+        </div>
+        <div class="about-row">
+          <span class="about-row-label">LinkedIn</span>
+          <span class="about-row-value"><a href="https://www.linkedin.com/in/adriel-kampa-de-gois-3bab841a5/" target="_blank" rel="noopener">/in/adriel-kampa</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-tag">02 · Toolkit</div>
+      <h2 class="section-title">Skills &amp; <span>Focus Areas</span></h2>
+      <p class="section-desc">Actively built through coursework, the Cisco Ethical Hacker program, and hands-on lab work — this list evolves as I complete new modules and projects.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="skill-card-title">Security &amp; Ethical Hacking</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Ethical Hacking</span>
+          <span class="skill-tag">Penetration Testing</span>
+          <span class="skill-tag">Vulnerability Assessment</span>
+          <span class="skill-tag">Threat Analysis</span>
+          <span class="skill-tag">Incident Response</span>
+          <span class="skill-tag">Risk Management</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M8 4v5"/></svg>
+        </div>
+        <div class="skill-card-title">Networking &amp; Systems</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Network Security</span>
+          <span class="skill-tag">Nmap</span>
+          <span class="skill-tag">Linux Security</span>
+          <span class="skill-tag">Windows Server</span>
+          <span class="skill-tag">Active Directory</span>
+          <span class="skill-tag">DNS &amp; GPO</span>
+          <span class="skill-tag">Cisco Packet Tracer</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <div class="skill-card-title">Programming &amp; Cloud</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">PowerShell</span>
+          <span class="skill-tag">HTML/CSS/JS</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">AWS Fundamentals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="section" id="journey">
+  <div class="container">
+    <div class="section-head reveal" style="text-align:center; margin-left:auto; margin-right:auto;">
+      <div class="section-tag" style="justify-content:center;">03 · Path</div>
+      <h2 class="section-title">My <span>Journey</span></h2>
+      <p class="section-desc" style="margin:0 auto;">From business analysis to hands-on infrastructure and security — a career built one deliberate step at a time.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-date">Jul 2019 – Apr 2023 · Curitiba, Brazil</div>
+        <div class="timeline-title">Senior Business Analyst — Paraná Banco S/A</div>
+        <div class="timeline-desc">Led a 20+ person team, grew sales from R$97K to R$4MM, and drove process automation and data-informed decision making.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Jul 2023 – Present · Dublin, Ireland</div>
+        <div class="timeline-title">Assistant Retail Sales Manager — Centra</div>
+        <div class="timeline-desc">Manage live security monitoring, risk prevention and compliance auditing alongside team leadership — where my interest in threat detection took root.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Aug 2024 – Sep 2028 · Dublin, Ireland</div>
+        <div class="timeline-title">BSc Computer Science — CCT College Dublin</div>
+        <div class="timeline-desc">Studying networking, systems administration, cloud fundamentals and secure software development.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Jul 2025 · Dublin, Ireland (Remote)</div>
+        <div class="timeline-title">Freelance — Windows Server &amp; Active Directory Infrastructure</div>
+        <div class="timeline-desc">Designed and documented a simulated corporate network: Domain Controller, OUs, GPOs and NTFS permissions. Published in full on GitHub.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2026 – Present · Dublin, Ireland</div>
+        <div class="timeline-title">Field Support Dispatch Engineer — Wipro</div>
+        <div class="timeline-desc">On-call IT support with a 1-hour SLA, troubleshooting hardware and systems for enterprise environments.</div>
+      </div>
+
+      <div class="timeline-item is-future">
+        <div class="timeline-date">Next</div>
+        <div class="timeline-title">Cisco Ethical Hacker Certification — In Progress</div>
+        <div class="timeline-desc">Building toward a full-time role in cybersecurity — new projects and write-ups added as I complete them.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-tag">04 · Work</div>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <p class="section-desc">Real, hands-on builds — from infrastructure simulations to security tooling. More on the way as I progress through the Cisco Ethical Hacker path.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: real, completed -->
+      <div class="project-card reveal" style="border-style:solid; border-color:var(--border-subtle);">
+        <span class="project-status" style="color:var(--accent-green); background:rgba(57,255,157,0.1); border-color:rgba(57,255,157,0.3);">Completed</span>
+        <div class="project-icon" style="color:var(--accent-green); border-color:var(--border-subtle);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="project-title" style="color:var(--text-primary);">Windows Server 2022 — Simulated AD Infrastructure</div>
+        <div class="project-desc" style="color:var(--text-secondary);">
+          Full corporate network simulation: Domain Controller, DNS, Organizational Units, security groups,
+          NTFS permissions and Group Policy automation for two departments. Fully documented with a
+          technical report.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Windows Server</span>
+          <span class="project-tag">Active Directory</span>
+          <span class="project-tag">GPO</span>
+          <span class="project-tag">DNS</span>
+        </div>
+        <a href="https://github.com/AdrielKampa/Windows-Server-2022-AD-Simulated-Infrastructure" target="_blank" rel="noopener" class="project-link" style="color:var(--accent-green);">
+          View on GitHub
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <!-- Project 2: real, in progress -->
+      <div class="project-card reveal">
+        <span class="project-status">In Development</span>
+        <div class="project-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <div class="project-title">Secure Access Manager</div>
+        <div class="project-desc">
+          A Java system that manages users, passwords and access logs, detects suspicious login patterns,
+          and simulates secure data transmission across the network. Actively being built.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Java</span>
+          <span class="project-tag">Access Control</span>
+          <span class="project-tag">Logging</span>
+        </div>
+        <a href="https://github.com/AdrielKampa/Secure-Access-Manager" target="_blank" rel="noopener" class="project-link">
+          Follow progress on GitHub
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <!-- Project 3: placeholder for future work -->
+      <div class="project-card reveal">
+        <span class="project-status">Coming Soon</span>
+        <div class="project-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <div class="project-title">Next Build — TBA</div>
+        <div class="project-desc">
+          My next project, likely a penetration-testing lab or CTF write-up series, is in planning as part
+          of the Cisco Ethical Hacker path. Check back soon.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Pentesting</span>
+          <span class="project-tag">TBA</span>
+        </div>
+        <span class="project-link">In planning</span>
+      </div>
+
+    </div>
+
+    <div class="projects-footer">// more projects are added as they're completed — this page is a living portfolio</div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-panel reveal">
+      <h2 class="contact-title">Let's <span style="color:var(--accent-green)">connect</span>.</h2>
+      <p class="contact-desc">
+        Open to internships, junior SOC/security-analyst roles and any opportunity to keep learning
+        by doing. Based in Dublin, Ireland — open to remote and on-site.
+      </p>
+
+      <div class="contact-actions">
+        <a href="mailto:adrielkg3011@gmail.com" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+          adrielkg3011@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/adriel-kampa-de-gois-3bab841a5/" target="_blank" rel="noopener" class="btn btn-ghost">Connect on LinkedIn</a>
+      </div>
+
+      <div class="social-row">
+        <a href="https://github.com/AdrielKampa" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.79-.25.79-.55 0-.27-.01-1.15-.02-2.09-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.42.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.21.66.8.55A10.53 10.53 0 0023.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/adriel-kampa-de-gois-3bab841a5/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 11.02-4.12 2.06 2.06 0 01-.02 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+        </a>
+        <a href="mailto:adrielkg3011@gmail.com" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Adriel Kampa de Gois. Built from scratch, line by line.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
