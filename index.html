@@ -310,24 +310,26 @@
         </a>
       </div>
 
-      <!-- Project 2: real, in progress -->
-      <div class="project-card reveal">
-        <span class="project-status">In Development</span>
-        <div class="project-icon">
+      <!-- Project 2: real, completed -->
+      <div class="project-card reveal" style="border-style:solid; border-color:var(--border-subtle);">
+        <span class="project-status" style="color:var(--accent-green); background:rgba(57,255,157,0.1); border-color:rgba(57,255,157,0.3);">Completed</span>
+        <div class="project-icon" style="color:var(--accent-green); border-color:var(--border-subtle);">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
         </div>
-        <div class="project-title">Secure Access Manager</div>
-        <div class="project-desc">
-          A Java system that manages users, passwords and access logs, detects suspicious login patterns,
-          and simulates secure data transmission across the network. Actively being built.
+        <div class="project-title" style="color:var(--text-primary);">Secure Access Manager</div>
+        <div class="project-desc" style="color:var(--text-secondary);">
+          Identity and access management system with JWT authentication, role-based access control,
+          brute-force detection with rate limiting, and full audit logging — served entirely over TLS 1.3.
+          Verified with PowerShell attack simulations, H2 audit-trail inspection and Wireshark traffic analysis.
         </div>
         <div class="project-tags">
-          <span class="project-tag">Java</span>
-          <span class="project-tag">Access Control</span>
-          <span class="project-tag">Logging</span>
+          <span class="project-tag">Spring Boot</span>
+          <span class="project-tag">Spring Security</span>
+          <span class="project-tag">JWT</span>
+          <span class="project-tag">TLS 1.3</span>
         </div>
-        <a href="https://github.com/AdrielKampa/Secure-Access-Manager" target="_blank" rel="noopener" class="project-link">
-          Follow progress on GitHub
+        <a href="https://github.com/AdrielKampa/Secure-Access-Manager" target="_blank" rel="noopener" class="project-link" style="color:var(--accent-green);">
+          View on GitHub
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
         </a>
       </div>
